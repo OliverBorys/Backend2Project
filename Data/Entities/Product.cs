@@ -13,7 +13,7 @@ public class Product
     public string ProductName { get; set; } = default!;
 
     [Required]
-    public double Price { get; set; }
+    public decimal Price { get; set; }
 
     [Required, MaxLength(250)]
     public string Image { get; set; } = default!;

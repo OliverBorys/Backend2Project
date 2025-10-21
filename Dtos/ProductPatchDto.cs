@@ -7,7 +7,7 @@ public class ProductPatchDto
     [MaxLength(50)]
     public string? ProductName { get; init; }
 
-    public double? Price { get; init; }
+    public decimal? Price { get; init; }
 
     [MaxLength(250)]
     public string? Image { get; init; }

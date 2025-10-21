@@ -7,7 +7,7 @@ public sealed class ProductDto
 {
     public int Id { get; init; }
     public string? ProductName { get; init; }
-    public double? Price { get; init; }
+    public decimal? Price { get; init; }
     public string? Image { get; init; }
     public string? SecondaryImage1 { get; init; }
     public string? SecondaryImage2 { get; init; }

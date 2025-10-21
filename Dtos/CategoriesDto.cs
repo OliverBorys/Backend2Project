@@ -7,7 +7,7 @@ public sealed class ProductInCategoryDto
 {
     public int Id { get; init; }
     public string ProductName { get; init; } = string.Empty;
-    public double Price { get; init; }
+    public decimal Price { get; init; }
     public string? Image { get; init; }
     public static Expression<Func<Product, ProductInCategoryDto>> Projection => p => new ProductInCategoryDto
     {
