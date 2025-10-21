@@ -1,4 +1,5 @@
-﻿using System.Linq.Expressions;
+﻿using Backend2Project.Data.Entities;
+using System.Linq.Expressions;
 
 namespace Backend2Project.Dtos;
 
