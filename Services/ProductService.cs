@@ -1,9 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Backend2Project.Data;
+﻿using Backend2Project.Data;
 using Backend2Project.Dtos;
 using Backend2Project.Data.Entities;
 using Backend2Project.Data.Extensions;
 using Backend2Project.Utilities;
+using Microsoft.EntityFrameworkCore;
 
 namespace Backend2Project.Services;
 

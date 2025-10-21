@@ -1,7 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Backend2Project.Data;
+﻿using Backend2Project.Data;
 using Backend2Project.Data.Entities;
 using Backend2Project.Utilities;
+using Microsoft.EntityFrameworkCore;
 
 namespace Backend2Project.Services;
 
@@ -102,6 +102,6 @@ public class UserService
         context.Users.Remove(user);
         await context.SaveChangesAsync(ct);
 
-        return (true, null); // 2 värden – rätt!
+        return (true, null);
     }
 }
