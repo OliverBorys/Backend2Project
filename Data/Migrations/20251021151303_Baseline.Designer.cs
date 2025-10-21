@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Backend2Project.Migrations
 {
     [DbContext(typeof(Backend2ProjectContext))]
-    [Migration("20251021064138_InitalCreat")]
-    partial class InitalCreat
+    [Migration("20251021151303_Baseline")]
+    partial class Baseline
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -80,8 +80,8 @@ namespace Backend2Project.Migrations
                         .HasColumnType("nvarchar(max)")
                         .HasColumnName("isTrending");
 
-                    b.Property<double>("Price")
-                        .HasColumnType("float")
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)")
                         .HasColumnName("price");
 
                     b.Property<string>("ProductDescription")
