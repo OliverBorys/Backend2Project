@@ -3,7 +3,7 @@ using System.Linq.Expressions;
 
 namespace Backend2Project.Dtos;
 
-public sealed class CategoriesDto
+public sealed class ProductInCategoryDto
 {
     public int Id { get; init; }
     public string ProductName { get; init; } = string.Empty;

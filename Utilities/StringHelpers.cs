@@ -11,4 +11,3 @@ public static class StringHelpers
 
     public static string ToSlug(string s) => Slugify(s);
 }
-}
