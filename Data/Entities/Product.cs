@@ -36,7 +36,7 @@ public class Product
     public string? IsTrending { get; set; }
 
     [Required]
-    public int CategoryId { get; set; }
+    public int? CategoryId { get; set; }
 
     [Required]
     public DateOnly PublishingDate { get; set; }

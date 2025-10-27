@@ -51,11 +51,15 @@ public class Backend2ProjectContext(DbContextOptions<Backend2ProjectContext> opt
             e.Property(p => p.CategoryId).HasColumnName("categoryId");
             e.Property(p => p.PublishingDate).HasColumnName("publishingDate");
 
-            // FK till Category med CASCADE delete
+            // FK till Category med SetNull delete
+            e.Property(p => p.CategoryId)
+             .HasColumnName("categoryId")
+             .IsRequired(false);
+
             e.HasOne(p => p.Category)
              .WithMany(c => c.Products)
              .HasForeignKey(p => p.CategoryId)
-             .OnDelete(DeleteBehavior.Cascade);
+             .OnDelete(DeleteBehavior.SetNull);
         });
     }
 }
